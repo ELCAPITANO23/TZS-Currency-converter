@@ -62,7 +62,7 @@
               <span class="currency-name">${marketData[code].name}</span>
             </td>
             <td><span class="code-tag">${code}</span></td>
-            <td class="rate-value">${Number(tzsValue).toLocaleString()} </td>
+            <td class="rate-value">${Number(tzsValue).toLocaleString()}</td>
           </tr>`;
       }
     }
@@ -161,39 +161,7 @@
   </script>
 </head>
 <body>
-
-  <!-- ═══ Rates Table ═══ -->
-  <div class="exchange-container">
-    <div class="panel-title">
-      <h2>Market Exchange Rates</h2>
-      <p id="update-time">Fetching rates…</p>
-    </div>
-
-    <table id="currency-table">
-      <thead>
-        <tr>
-          <th>Currency</th>
-          <th>Code</th>
-          <th>Rate (TZS)</th>
-        </tr>
-      </thead>
-      <tbody id="table-body">
-        <tr><td colspan="3" class="loading-cell">
-          <div class="loader-wrapper">
-            <span>Fetching</span>
-            <div class="dot dot-red"></div>
-            <div class="dot dot-blue"></div>
-            <div class="dot dot-green"></div>
-            <div class="dot dot-yellow"></div>
-          </div>
-        </td></tr>
-      </tbody>
-    </table>
-
-    <div class="signature">© Designed by ELCAPITANO EMOUR</div>
-  </div>
-
-  <!-- ═══ Converter ═══ -->
+<!-- ═══ Converter ═══ -->
   <div class="calculator">
     <div class="panel-title">
       <h2>Currency Converter</h2>
@@ -239,6 +207,39 @@
       />
     </div>
   </div>
+  
+  <!-- ═══ Rates Table ═══ -->
+  <div class="exchange-container">
+    <div class="panel-title">
+      <h2>Market Exchange Rates</h2>
+      <p id="update-time">Fetching rates…</p>
+    </div>
+
+    <table id="currency-table">
+      <thead>
+        <tr>
+          <th>Currency</th>
+          <th>Code</th>
+          <th>Rate (TZS)</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr><td colspan="3" class="loading-cell">
+          <div class="loader-wrapper">
+            <span>Fetching</span>
+            <div class="dot dot-red"></div>
+            <div class="dot dot-blue"></div>
+            <div class="dot dot-green"></div>
+            <div class="dot dot-yellow"></div>
+          </div>
+        </td></tr>
+      </tbody>
+    </table>
+
+    <div class="signature">© Designed by ELCAPITANO EMOUR</div>
+  </div>
+
+  
 
 </body>
 </html>
